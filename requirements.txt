@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 Flask==3.0.3
 flask-cors==4.0.1
 gunicorn
@@ -9,12 +11,13 @@ scipy==1.11.4
 
 tensorflow-cpu==2.13.0
 keras==2.13.1
+
 rank-bm25
+faiss-cpu==1.7.4
+
 sentence-transformers==2.2.2
 transformers==4.41.2
-torch==2.1.2
-
-faiss-cpu==1.7.4
+torch==2.1.2+cpu
 
 requests
 gdown
