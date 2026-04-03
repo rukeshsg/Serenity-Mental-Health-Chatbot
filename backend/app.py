@@ -1136,7 +1136,9 @@ def root():
     })
 
 
+import os
+
 if __name__ == '__main__':
-    logger.info("Starting Serenity backend on http://0.0.0.0:5000")
-    logger.info("Session expiry configured for %s minutes", SESSION_EXPIRY_MINUTES)
-    app.run(host='0.0.0.0', port=5000, debug=app.config["DEBUG"])
+    logger.info("Starting Serenity backend...")
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=app.config["DEBUG"])
