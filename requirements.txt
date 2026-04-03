@@ -9,7 +9,7 @@ scipy==1.11.4
 
 tensorflow-cpu==2.13.0
 keras==2.13.1
-
+rank-bm25
 sentence-transformers==2.2.2
 transformers==4.41.2
 torch==2.1.2
