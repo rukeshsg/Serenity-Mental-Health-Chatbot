@@ -3,6 +3,7 @@
 **Serenity** is an AI-powered mental health support chatbot that provides safe, empathetic, and real-time conversations. It helps users manage stress, reflect on emotions, and access support in a private environment.
 
 The system integrates a BiLSTM-based intent model, crisis detection, and safety mechanisms to ensure responsible and supportive interactions. It features a modern UI for real-time communication and personalized user experience.
+
 ---
 
 ## 🌐 Live Demo
