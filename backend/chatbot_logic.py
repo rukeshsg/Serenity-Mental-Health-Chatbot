@@ -390,29 +390,7 @@ def chatbot(user_text, session_id=None, user_id=None, client_messages=None):
     recent_intents = session_crisis_store.get_recent_intents(session_id)
     conversation_context = _build_conversation_context(session_id, client_messages=client_messages, current_user_text=user_text)
 
-   """if _should_use_rag_context(user_text, intent, confidence):
-        if ADVANCED_FEATURES_ENABLED:
-            try:
-                rag_results = hybrid_search(
-                    user_text, faiss_index, bm25_index, situations, responses, k=2
-                )
-                if rag_results:
-                    rag_context = rag_results[0][0]
-                else:
-                    rag_context = ""
-            except Exception:
-                try:
-                    rag_context = search(user_text, faiss_index, situations, responses)[0]
-                except Exception:
-                    rag_context = ""
-        else:
-            try:
-                rag_context = search(user_text, faiss_index, situations, responses)[0]
-            except Exception:
-                rag_context = ""
-    else:
-        rag_context = ""
-        """
+ 
     rag_context = ""
 
     cache_excluded_inputs = SHORT_GREETING_INPUTS.union(SHORT_ACK_INPUTS).union(FOLLOW_UP_INPUTS).union(UNCERTAIN_INPUTS)
