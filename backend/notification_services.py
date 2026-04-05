@@ -133,6 +133,9 @@ class NotificationService:
         if response.status_code not in [200, 201]:
             raise DeliveryError(f"Email failed: {response.text}")
 
-        
+        return DeliveryResult(
+            provider="brevo",
+            recipient_masked=_mask_email(recipient_email)
+        )
 
 notification_service = NotificationService()
