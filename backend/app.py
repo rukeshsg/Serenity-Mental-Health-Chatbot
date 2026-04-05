@@ -19,7 +19,9 @@ from dotenv import load_dotenv
 
 load_dotenv(os.path.join(project_root, ".env"))
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UI_DIR = os.path.join(BASE_DIR, "ui", "dist")
 from flask_cors import CORS
 import uuid
 import secrets
@@ -1127,15 +1129,12 @@ def health():
 
 
 @app.route('/', methods=['GET'])
-def root():
-    """Root endpoint - API info"""
-    return jsonify({
-        'name': 'Mental Health Support Chatbot API',
-        'version': '1.0.0',
-        'status': 'running'
-    })
+def serve_ui():
+    return send_from_directory(UI_DIR, "index.html")
 
-
+@app.route('/<path:path>')
+def serve_static_files(path):
+    return send_from_directory(UI_DIR, path)
 import os
 
 if __name__ == '__main__':
