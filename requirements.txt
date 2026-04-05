@@ -10,3 +10,4 @@ keras==2.13.1
 
 requests
 python-dotenv
+pandas
