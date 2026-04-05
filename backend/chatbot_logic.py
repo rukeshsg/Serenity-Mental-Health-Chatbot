@@ -8,7 +8,7 @@ from backend.crisis_module import (
     session_crisis_store,
 )
 from backend.logger import save_intent
-from backend.rag_engine import search, hybrid_search, situations, responses, faiss_index, bm25_index
+#from backend.rag_engine import search, hybrid_search, situations, responses, faiss_index, bm25_index
 from backend.llm_response import (
     generate_reply,
     detect_distress_type,
@@ -247,22 +247,23 @@ def _sanitize_non_crisis_response(user_text, intent, response, recent_intents, c
 
 
 def _should_use_rag_context(user_text, intent, confidence):
-    cleaned_text = (user_text or "").strip().lower()
-    if not cleaned_text:
-        return False
+    return False
+    #cleaned_text = (user_text or "").strip().lower()
+    #if not cleaned_text:
+      #  return False
 
-    short_inputs = SHORT_GREETING_INPUTS.union(SHORT_ACK_INPUTS).union(FOLLOW_UP_INPUTS).union(UNCERTAIN_INPUTS)
-    if cleaned_text in short_inputs:
-        return False
+   # short_inputs = SHORT_GREETING_INPUTS.union(SHORT_ACK_INPUTS).union(FOLLOW_UP_INPUTS).union(UNCERTAIN_INPUTS)
+   # if cleaned_text in short_inputs:
+     #   return False
 
-    word_count = len(cleaned_text.split())
-    if confidence is None:
-        return word_count >= 3 and intent in {"general", "normal", "distress"}
+   # word_count = len(cleaned_text.split())
+  #  if confidence is None:
+    #    return word_count >= 3 and intent in {"general", "normal", "distress"}
 
-    if confidence <= 0.8:
-        return True
+   # if confidence <= 0.8:
+     #   return True
 
-    return intent in {"general", "normal", "distress"} and confidence < 0.9 and word_count >= 4
+  #  return intent in {"general", "normal", "distress"} and confidence < 0.9 and word_count >= 4
 
 
 def chatbot(user_text, session_id=None, user_id=None, client_messages=None):
@@ -389,7 +390,7 @@ def chatbot(user_text, session_id=None, user_id=None, client_messages=None):
     recent_intents = session_crisis_store.get_recent_intents(session_id)
     conversation_context = _build_conversation_context(session_id, client_messages=client_messages, current_user_text=user_text)
 
-    if _should_use_rag_context(user_text, intent, confidence):
+   """if _should_use_rag_context(user_text, intent, confidence):
         if ADVANCED_FEATURES_ENABLED:
             try:
                 rag_results = hybrid_search(
@@ -411,6 +412,8 @@ def chatbot(user_text, session_id=None, user_id=None, client_messages=None):
                 rag_context = ""
     else:
         rag_context = ""
+        """
+    rag_context = ""
 
     cache_excluded_inputs = SHORT_GREETING_INPUTS.union(SHORT_ACK_INPUTS).union(FOLLOW_UP_INPUTS).union(UNCERTAIN_INPUTS)
     use_safe_cache = (
