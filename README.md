@@ -44,17 +44,19 @@ https://serenity-ai-2yt3.onrender.com
   <img src="./assets/home.png" width="48%"/>
 </p>
 
+### 📊 Analytics Dashboard
+
+<p align="center">
+  <img src="./assets/dashboard1.png" width="48%"/>
+  <img src="./assets/dashboard.png" width="48%"/>
+</p>
+
 ### 💬 Chat Interface
 
 <p align="center">
   <img src="./assets/chat.png" width="800"/>
 </p>
 
-### 📊 Analytics Dashboard
-
-<p align="center">
-  <img src="./assets/dashboard.png" width="800"/>
-</p>
 
 ### ⚙️ Settings
 
