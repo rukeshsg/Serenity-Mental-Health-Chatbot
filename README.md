@@ -4,6 +4,7 @@
 
 <h1 align="center">Serenity – AI Mental Health Chatbot</h1>
 
+<p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-Backend-000000?logo=flask&logoColor=white)
@@ -14,6 +15,7 @@
 ![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+</p>
 
 ## 🌐 Live Demo
 https://serenity-ai-2yt3.onrender.com
