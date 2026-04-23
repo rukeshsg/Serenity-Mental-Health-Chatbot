@@ -44,10 +44,14 @@ Serenity aims to create a safe digital space where users can express emotions, r
 
 ---
 
-## ⚠️ Disclaimer
-This chatbot is not a substitute for professional medical advice. In critical situations, please contact a trusted person or a professional helpline.
-
----
-
 ## 📌 Status
 🔄 Continuous improvements planned
+
+---
+## 📄 License
+
+This project is licensed under the Apache License 2.0.
+
+## ⚠️ Disclaimer
+
+This chatbot is intended for educational purposes only and is not a substitute for professional mental health care, diagnosis, or treatment. If you are experiencing serious distress, please seek help from a qualified professional or a local support service.
