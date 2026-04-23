@@ -1,15 +1,9 @@
-<p align="left">
-  <img src="./assets/logo_128.png" width="40" style="vertical-align: middle; margin-right: 10px;" />
-  <span style="font-size: 28px; font-weight: bold;">Serenity – AI Mental Health Chatbot</span>
-</p>
-
 <p align="center">
   <img src="./assets/logo_128.png" width="80"/>
 </p>
 
 <h1 align="center">Serenity – AI Mental Health Chatbot</h1>
 
-# 🌿 Serenity – AI Mental Health Chatbot
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-Backend-000000?logo=flask&logoColor=white)
