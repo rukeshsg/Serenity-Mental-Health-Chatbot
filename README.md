@@ -6,15 +6,16 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-Backend-000000?logo=flask&logoColor=white)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
-![ML](https://img.shields.io/badge/ML-BiLSTM-2ECC71)
-![RAG](https://img.shields.io/badge/RAG-FAISS-orange)
-![Database](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite&logoColor=white)
-![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-6C63FF?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Backend-1E1E2F?style=for-the-badge&logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/React-Frontend-8A7CFF?style=for-the-badge&logo=react&logoColor=white)
+![ML](https://img.shields.io/badge/ML-BiLSTM-7F5AF0?style=for-the-badge)
+![RAG](https://img.shields.io/badge/RAG-FAISS-9B5DE5?style=for-the-badge)
+![Database](https://img.shields.io/badge/Database-SQLite-5A4FCF?style=for-the-badge)
+![Deploy](https://img.shields.io/badge/Deploy-Render-6C63FF?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-2CB67D?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Apache%202.0-4F46E5?style=for-the-badge)
+
 </p>
 
 ## 🌐 Live Demo
