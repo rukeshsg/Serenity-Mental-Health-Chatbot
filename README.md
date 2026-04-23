@@ -3,24 +3,23 @@
   <span style="font-size: 28px; font-weight: bold;">Serenity – AI Mental Health Chatbot</span>
 </p>
 
+<p align="center">
+  <img src="./assets/logo_128.png" width="80"/>
+</p>
+
+<h1 align="center">Serenity – AI Mental Health Chatbot</h1>
+
+# 🌿 Serenity – AI Mental Health Chatbot
+
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-Backend-000000?logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
-![ML](https://img.shields.io/badge/Machine%20Learning-BiLSTM-2ECC71)
+![ML](https://img.shields.io/badge/ML-BiLSTM-2ECC71)
 ![RAG](https://img.shields.io/badge/RAG-FAISS-orange)
 ![Database](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite&logoColor=white)
-![API](https://img.shields.io/badge/API-REST-FF6F61)
-![Twilio](https://img.shields.io/badge/Twilio-SMS-F22F46?logo=twilio&logoColor=white)
-![Email](https://img.shields.io/badge/Email-SMTP-6C63FF)
-![Deployment](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=black)
+![Deploy](https://img.shields.io/badge/Deploy-Render-46E3B7?logo=render&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![AI Chatbot](https://img.shields.io/badge/AI-Chatbot-purple)
-![Mental Health](https://img.shields.io/badge/Focus-Mental%20Health-8E44AD)
-![Safety](https://img.shields.io/badge/Safety-Crisis%20Detection-red)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-00C853)
 
 ## 🌐 Live Demo
 https://serenity-ai-2yt3.onrender.com
@@ -42,6 +41,40 @@ https://serenity-ai-2yt3.onrender.com
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home
+
+<p align="center">
+  <img src="./assets/home1.png" width="48%"/>
+  <img src="./assets/home.png" width="48%"/>
+</p>
+
+### 💬 Chat Interface
+
+<p align="center">
+  <img src="./assets/chat.png" width="800"/>
+</p>
+
+### 📊 Analytics Dashboard
+
+<p align="center">
+  <img src="./assets/dashboard.png" width="800"/>
+</p>
+
+### ⚙️ Settings
+
+<p align="center">
+  <img src="./assets/settings.png" width="800"/>
+</p>
+
+### 🚨 Crisis Support
+
+<p align="center">
+  <img src="./assets/crisis.png" width="800"/>
+</p>
+
+---
 
 ## 🧠 System Architecture
 The application follows a robust, privacy-first data pipeline built for safe interactions:
