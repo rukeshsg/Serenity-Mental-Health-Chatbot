@@ -220,7 +220,7 @@ The application follows a robust, privacy-first data pipeline built for safe int
 
 
 ## 📄 License
-This project is licensed under the Apache License 2.0.
+This project is licensed under the MIT.
 
 
 ---
