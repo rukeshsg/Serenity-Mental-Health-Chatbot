@@ -19,22 +19,15 @@
 </p>
 ## 🌐 Live Demo
 
-[![Live Demo](https://shields.io🟢_Visit_Site-7F56D9?style=for-the-badge&logo=render&logoColor=white)](https://serenity-ai-2yt3.onrender.com)
-
 ## 🌐 Live Demo
 
 <p align="center">
-  <a href="[https://onrender.com](https://serenity-ai-2yt3.onrender.com)" target="_blank">
-    <img src="https://shields.io⚡-blue?style=for-the-badge" alt="Live Demo" height="40">
+  <a href="[https://onrender.com](https://serenity-ai-2yt3.onrender.com)" target="_blank" style="text-decoration:none;">
+    <kbd style="padding: 12px 24px; font-size: 16px; font-weight: bold; color: white; background: linear-gradient(135deg, #7F56D9, #4B2DA3); border: 1px solid #633BB2; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.25);">
+      🚀 Launch Serenity AI Demo →
+    </kbd>
   </a>
 </p>
-
-
-## 🌐 Live Demo
-
-[![Demo](https://shields.io)](https://serenity-ai-2yt3.onrender.com)
-
-
 
 ---
 
