@@ -162,11 +162,13 @@ body.dark-mode .input-area input::placeholder {
 
 .app {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--background);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -305,9 +307,10 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 /* Auth Modal */
 .auth-modal {
   background: white;
-  padding: 28px 28px 22px;
+  width: min(100%, 420px);
+  min-width: 0;
+  padding: clamp(20px, 3vw, 28px) clamp(18px, 3vw, 28px) clamp(18px, 2.5vw, 22px);
   border-radius: var(--radius);
-  min-width: 340px;
   max-width: 420px;
   box-shadow: var(--shadow-lg);
   position: relative;
@@ -326,8 +329,8 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 }
 
 .auth-logo {
-  width: 112px;
-  height: 112px;
+  width: clamp(88px, 10vw, 112px);
+  height: clamp(88px, 10vw, 112px);
   object-fit: contain;
   filter: drop-shadow(0 14px 28px rgba(120, 86, 198, 0.22));
 }
@@ -484,7 +487,9 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 28px 16px;
+  min-height: 100dvh;
+  padding: clamp(18px, 4vh, 28px) 16px;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -506,9 +511,11 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 
 .auth-gate-app {
   min-height: 100vh;
+  min-height: 100dvh;
   height: auto;
+  overflow-x: hidden;
   overflow-y: auto;
-  padding: 28px 16px;
+  padding: clamp(16px, 3vh, 28px) 16px;
 }
 
 .auth-loading-card,
@@ -518,8 +525,9 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 }
 
 .auth-loading-card {
-  min-width: 320px;
-  padding: 40px 36px;
+  width: min(100%, 360px);
+  min-width: 0;
+  padding: clamp(28px, 5vw, 40px) clamp(22px, 5vw, 36px);
   border-radius: 28px;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
@@ -558,38 +566,40 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 .auth-gate-shell {
   width: min(960px, calc(100vw - 32px));
   margin: auto;
-  padding: 36px;
+  padding: clamp(20px, 3vw, 36px);
   border-radius: 32px;
   background: linear-gradient(140deg, rgba(255, 255, 255, 0.96) 0%, rgba(249, 244, 255, 0.94) 100%);
   border: 1px solid rgba(155, 126, 217, 0.18);
   box-shadow: 0 28px 90px rgba(155, 126, 217, 0.18);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 420px);
-  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  gap: clamp(20px, 3vw, 32px);
   align-items: center;
 }
 
 .auth-gate-visual {
   min-height: 100%;
   padding: 14px 10px 14px 6px;
+  display: flex;
+  flex-direction: column;
 }
 
 .auth-gate-brand {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: clamp(16px, 3vh, 28px);
 }
 
 .auth-hero-logo-wrap {
   display: flex;
   justify-content: center;
-  margin: 0 0 24px;
-  padding: 6px 0 10px;
+  margin: 0 0 clamp(14px, 3vh, 24px);
+  padding: 4px 0 clamp(4px, 1.5vh, 10px);
 }
 
 .auth-hero-logo {
-  width: min(240px, 48vw);
+  width: clamp(150px, 16vw, 240px);
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -599,8 +609,8 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 .auth-gate-preview {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 24px 20px;
+  gap: clamp(10px, 1.8vh, 14px);
+  padding: clamp(16px, 2.6vh, 24px) clamp(16px, 2vw, 20px);
   border-radius: 28px;
   background:
     radial-gradient(circle at top right, rgba(182, 147, 255, 0.16), transparent 32%),
@@ -611,9 +621,9 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 
 .preview-bubble {
   max-width: 82%;
-  padding: 14px 16px;
+  padding: clamp(10px, 1.8vh, 14px) clamp(12px, 1.8vw, 16px);
   border-radius: 18px;
-  font-size: 0.98rem;
+  font-size: clamp(0.9rem, 1.2vw, 0.98rem);
   line-height: 1.5;
   box-shadow: 0 10px 24px rgba(155, 126, 217, 0.08);
 }
@@ -633,14 +643,14 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 
 .auth-gate-benefits {
   display: grid;
-  gap: 14px;
-  margin-top: 18px;
+  gap: clamp(10px, 1.8vh, 14px);
+  margin-top: clamp(12px, 2vh, 18px);
 }
 
 .auth-benefit-card {
   display: grid;
   gap: 6px;
-  padding: 16px 18px;
+  padding: clamp(12px, 1.8vh, 16px) clamp(14px, 1.8vw, 18px);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid rgba(155, 126, 217, 0.12);
@@ -657,9 +667,94 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
   line-height: 1.5;
 }
 
+.auth-wellness-panel {
+  margin-top: clamp(14px, 2vh, 20px);
+  padding: clamp(16px, 2.2vh, 22px);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(201, 226, 255, 0.35), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(184, 163, 232, 0.28), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(249, 245, 255, 0.82));
+  border: 1px solid rgba(155, 126, 217, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 16px 34px rgba(118, 84, 186, 0.08);
+}
+
+.auth-wellness-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.auth-wellness-header span {
+  color: #7b6c99;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.auth-wellness-header strong {
+  color: #4f3b86;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.auth-wellness-meter {
+  height: 10px;
+  padding: 2px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background: rgba(155, 126, 217, 0.13);
+  overflow: hidden;
+}
+
+.auth-wellness-meter span {
+  display: block;
+  width: 72%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #9B7ED9, #73A8FF);
+  box-shadow: 0 6px 14px rgba(115, 124, 255, 0.24);
+}
+
+.auth-wellness-list {
+  display: grid;
+  gap: 10px;
+}
+
+.auth-wellness-list div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(155, 126, 217, 0.1);
+}
+
+.auth-wellness-dot {
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #9B7ED9, #73A8FF);
+  box-shadow: 0 0 0 4px rgba(155, 126, 217, 0.12);
+}
+
+.auth-wellness-list p {
+  margin: 0;
+  color: #5d5277;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
 .auth-gate-panel {
   display: grid;
-  gap: 20px;
+  gap: clamp(14px, 2.5vh, 20px);
+  min-width: 0;
 }
 
 .auth-gate-copy {
@@ -667,16 +762,16 @@ body.dark-mode .modal-overlay.centered-safety-overlay .crisis-modal {
 }
 
 .auth-gate-copy h2 {
-  font-size: clamp(2.3rem, 4vw, 4rem);
+  font-size: clamp(2rem, 3.5vw, 4rem);
   line-height: 1.04;
-  margin-bottom: 16px;
+  margin-bottom: clamp(10px, 2vh, 16px);
   color: #4f3b86;
 }
 
 .auth-gate-copy p {
-  font-size: 1.12rem;
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
   color: var(--text-secondary);
-  margin-bottom: 10px;
+  margin-bottom: clamp(6px, 1.4vh, 10px);
 }
 
 .auth-gate-shell .auth-modal {
@@ -3102,6 +3197,29 @@ body.dark-mode .appearance-select-wrap {
   box-shadow: 0 18px 30px rgba(9, 5, 18, 0.28);
 }
 
+body.dark-mode .auth-wellness-panel {
+  background:
+    radial-gradient(circle at top right, rgba(86, 119, 255, 0.14), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(177, 130, 255, 0.14), transparent 34%),
+    linear-gradient(145deg, rgba(42, 23, 77, 0.9), rgba(31, 15, 58, 0.84));
+  border-color: rgba(145, 122, 209, 0.34);
+  box-shadow: none;
+}
+
+body.dark-mode .auth-wellness-header span,
+body.dark-mode .auth-wellness-list p {
+  color: #cfc2f2;
+}
+
+body.dark-mode .auth-wellness-header strong {
+  color: #f4eeff;
+}
+
+body.dark-mode .auth-wellness-list div {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(145, 122, 209, 0.2);
+}
+
 body.dark-mode .serenity-select {
   border-color: rgba(184, 164, 255, 0.52);
   background: linear-gradient(90deg, #b15eff 0%, #8a70ff 48%, #5677ff 100%);
@@ -3145,6 +3263,24 @@ body.dark-mode .input-area button {
 }
 
 @media (max-width: 900px) {
+  .auth-gate-shell {
+    grid-template-columns: 1fr;
+    width: min(640px, calc(100vw - 32px));
+  }
+
+  .auth-gate-copy {
+    max-width: none;
+    text-align: center;
+  }
+
+  .auth-gate-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .auth-wellness-panel {
+    margin-top: 14px;
+  }
+
   .app-header {
     align-items: flex-start;
   }
@@ -3192,6 +3328,20 @@ body.dark-mode .input-area button {
 
   .preview-bubble {
     max-width: 92%;
+  }
+
+  .auth-gate-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-wellness-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .auth-wellness-header strong {
+    text-align: left;
   }
 
   .main-content {
@@ -3249,5 +3399,130 @@ body.dark-mode .input-area button {
   .input-area input,
   .input-area button {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 901px) and (max-height: 820px) {
+  .auth-gate-app {
+    align-items: flex-start;
+  }
+
+  .auth-gate-shell {
+    align-items: start;
+    padding: 20px;
+    gap: 22px;
+  }
+
+  .auth-gate-visual {
+    padding: 0;
+  }
+
+  .auth-gate-brand {
+    margin-bottom: 12px;
+  }
+
+  .auth-hero-logo-wrap {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .auth-hero-logo {
+    width: clamp(130px, 12vw, 170px);
+  }
+
+  .auth-gate-preview {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .preview-bubble {
+    padding: 10px 13px;
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .auth-gate-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .auth-benefit-card {
+    padding: 10px 12px;
+  }
+
+  .auth-benefit-card span {
+    font-size: 0.86rem;
+    line-height: 1.35;
+  }
+
+  .auth-wellness-panel {
+    margin-top: 10px;
+    padding: 12px;
+  }
+
+  .auth-wellness-header {
+    margin-bottom: 10px;
+  }
+
+  .auth-wellness-meter {
+    margin-bottom: 10px;
+  }
+
+  .auth-wellness-list {
+    gap: 8px;
+  }
+
+  .auth-wellness-list div {
+    padding: 8px 10px;
+  }
+
+  .auth-wellness-list p {
+    font-size: 0.84rem;
+    line-height: 1.35;
+  }
+
+  .auth-gate-panel {
+    gap: 12px;
+  }
+
+  .auth-gate-copy h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+
+  .auth-logo-wrap {
+    margin-bottom: 12px;
+  }
+
+  .auth-modal h2 {
+    margin-bottom: 12px;
+  }
+
+  .auth-modal input,
+  .auth-modal select {
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+
+  .auth-modal button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-entry-shell,
+  .auth-gate-shell {
+    width: min(100%, calc(100vw - 24px));
+  }
+
+  .auth-entry-app,
+  .auth-gate-app {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .auth-gate-shell {
+    padding: 18px;
+    border-radius: 24px;
   }
 }
