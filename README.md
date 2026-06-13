@@ -17,9 +17,22 @@
 ![License](https://img.shields.io/badge/License-Apache%202.0-4F46E5?style=for-the-badge)
 
 </p>
+## 🌐 Live Demo
+
+[![Live Demo](https://shields.io🟢_Visit_Site-7F56D9?style=for-the-badge&logo=render&logoColor=white)](https://serenity-ai-2yt3.onrender.com)
 
 ## 🌐 Live Demo
-https://serenity-ai-2yt3.onrender.com
+
+<p align="center">
+  <a href="https://serenity-ai-2yt3.onrender.com" target="_blank">
+    <img src="https://shields.io🚀_Launch_Live_Demo-🔥-blue?style=for-the-badge&logo=appveyor" alt="Live Demo" height="40">
+  </a>
+</p>
+
+## 🌐 Live Demo
+
+[![Demo](https://shields.io)](https://serenity-ai-2yt3.onrender.com)
+
 
 
 ---
