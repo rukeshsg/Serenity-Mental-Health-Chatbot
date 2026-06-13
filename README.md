@@ -24,10 +24,11 @@
 ## 🌐 Live Demo
 
 <p align="center">
-  <a href="https://serenity-ai-2yt3.onrender.com" target="_blank">
-    <img src="https://shields.io🚀_Launch_Live_Demo-🔥-blue?style=for-the-badge&logo=appveyor" alt="Live Demo" height="40">
+  <a href="[https://onrender.com](https://serenity-ai-2yt3.onrender.com)" target="_blank">
+    <img src="https://shields.io⚡-blue?style=for-the-badge" alt="Live Demo" height="40">
   </a>
 </p>
+
 
 ## 🌐 Live Demo
 
