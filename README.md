@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://serenity-ai-2yt3.onrender.com" target="_blank" style="text-decoration:none;">
-    <kbd style="padding: 12px 24px; font-size: 16px; font-weight: bold; color: white; background: linear-gradient(135deg, #7F56D9, #4B2DA3); border: 1px solid #633BB2; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.25);">
+    <kbd style="padding: 24px 48px; font-size: 32px; font-weight: bold; color: white; background: linear-gradient(135deg, #7F56D9, #4B2DA3); border: 1px solid #633BB2; border-radius: 16px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.25);">
       🚀 Launch Serenity AI Demo →
     </kbd>
   </a>
