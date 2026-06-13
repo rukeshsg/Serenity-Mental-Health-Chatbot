@@ -1996,6 +1996,29 @@ function App() {
                 <span>Gentle conversations, trends, history, and personalized settings.</span>
               </div>
             </div>
+            <div className="auth-wellness-panel">
+              <div className="auth-wellness-header">
+                <span>Today's focus</span>
+                <strong>Gentle check-in</strong>
+              </div>
+              <div className="auth-wellness-meter" aria-hidden="true">
+                <span></span>
+              </div>
+              <div className="auth-wellness-list">
+                <div>
+                  <span className="auth-wellness-dot"></span>
+                  <p>Reflect privately with supportive prompts.</p>
+                </div>
+                <div>
+                  <span className="auth-wellness-dot"></span>
+                  <p>Track emotional trends when you sign in.</p>
+                </div>
+                <div>
+                  <span className="auth-wellness-dot"></span>
+                  <p>Return to your conversation history securely.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="auth-gate-panel">
             <div className="auth-gate-copy">
